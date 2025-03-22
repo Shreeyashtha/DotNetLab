@@ -1,0 +1,1 @@
+console.log("this is lab1 task");
