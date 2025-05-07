@@ -55,7 +55,6 @@
             label1.Size = new Size(63, 20);
             label1.TabIndex = 0;
             label1.Text = "Register";
-            //label1.Click += this.label1_Click;
             // 
             // label2
             // 
@@ -108,7 +107,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 6;
-            textBox1.TextChanged += this.textBox1_TextChanged;
             // 
             // comboBox1
             // 
@@ -118,13 +116,11 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 7;
-            comboBox1.SelectedIndexChanged += this.comboBox1_SelectedIndexChanged;
-            comboBox1.SelectedValueChanged += this.comboBox1_SelectedValueChanged;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Kathmandu", "Bhaktapur", "Lalitpur", "Kavre", "Pokhara", "Gorkha", "Lamjung" });
             comboBox2.Location = new Point(213, 200);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 28);
@@ -218,7 +214,6 @@
             Controls.Add(label1);
             Name = "Register";
             Text = "Form2";
-            Load += this.Register_Load;
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
             PerformLayout();
